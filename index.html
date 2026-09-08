@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ef">
+  <title>Dagmar & Mirko – Weisheiten unserer Hochzeitsgäste</title>
+  <style>
+    :root {
+      --bg: #f7f4ef;
+      --card: #fffdf9;
+      --text: #3a3835;
+      --muted: #77716a;
+      --gold: #b59655;
+      --line: #d9cdb7;
+      --shadow: 0 12px 35px rgba(71, 58, 38, 0.10);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(181,150,85,.07), transparent 35%),
+        var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      padding: 22px 16px 36px;
+    }
+
+    .page {
+      width: min(100%, 680px);
+      min-height: calc(100vh - 58px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .shell {
+      background: rgba(255,253,249,.86);
+      border: 1px solid rgba(181,150,85,.28);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .ornament {
+      text-align: center;
+      color: var(--gold);
+      font-size: 22px;
+      letter-spacing: 7px;
+      margin: 3px 0 20px;
+    }
+
+    .content {
+      padding: 46px 28px 36px;
+      text-align: center;
+    }
+
+    .names {
+      color: var(--gold);
+      font-family: "Segoe Script", "Brush Script MT", cursive;
+      font-size: clamp(34px, 9vw, 58px);
+      font-weight: 400;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .date {
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      margin: 0 auto 18px;
+      color: var(--gold);
+      font-size: clamp(26px, 7vw, 42px);
+      line-height: 1.15;
+      font-weight: 500;
+    }
+
+    .intro {
+      max-width: 520px;
+      margin: 0 auto 28px;
+      font-size: 18px;
+      line-height: 1.65;
+    }
+
+    .intro strong {
+      font-weight: 500;
+      color: var(--gold);
+    }
+
+    button {
+      appearance: none;
+      border: 1px solid var(--gold);
+      background: var(--gold);
+      color: white;
+      font: inherit;
+      font-size: 16px;
+      padding: 14px 24px;
+      border-radius: 999px;
+      cursor: pointer;
+      box-shadow: 0 6px 16px rgba(181,150,85,.16);
+      transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(181,150,85,.22);
+    }
+
+    button:active {
+      transform: translateY(0);
+    }
+
+    .secondary {
+      background: transparent;
+      color: var(--gold);
+      box-shadow: none;
+    }
+
+    .tip-screen[hidden],
+    .start-screen[hidden] {
+      display: none !important;
+    }
+
+    .tip-card {
+      margin: 24px auto 26px;
+      padding: 28px 22px 26px;
+      max-width: 560px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .prompt {
+      color: var(--gold);
+      font-family: "Segoe Script", "Brush Script MT", cursive;
+      font-size: clamp(23px, 6vw, 34px);
+      line-height: 1.35;
+      margin-bottom: 22px;
+    }
+
+    .answer {
+      font-size: clamp(28px, 7vw, 42px);
+      line-height: 1.27;
+      font-weight: 500;
+      text-wrap: balance;
+    }
+
+    .counter {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: .10em;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .error {
+      max-width: 520px;
+      margin: 18px auto 0;
+      padding: 14px 16px;
+      background: #fff7f2;
+      border: 1px solid #e7cfc1;
+      border-radius: 12px;
+      color: #7d4e38;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      padding: 0 20px 22px;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 10px; }
+      .page { min-height: calc(100vh - 20px); }
+      .content { padding: 34px 20px 28px; }
+      .shell { border-radius: 18px; }
+      .intro { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="shell">
+      <div class="content">
+        <div class="names">Dagmar &amp; Mirko</div>
+        <div class="date">29. August 2026</div>
+        <div class="ornament">♡</div>
+
+        <section class="start-screen" id="startScreen">
+          <h1>Tipps &amp; Weisheiten unserer Hochzeitsgäste</h1>
+          <p class="intro">
+            Danke, dass ihr unsere Hochzeit mit uns gefeiert habt.<br><br>
+            Ihr habt uns viele lustige, liebe und manchmal erstaunlich weise Tipps
+            für unsere Ehe mitgegeben.<br><br>
+            <strong>Zeit, sie noch einmal zu entdecken.</strong>
+          </p>
+          <button id="startButton">Weisheiten entdecken</button>
+          <div class="error" id="loadError" hidden></div>
+        </section>
+
+        <section class="tip-screen" id="tipScreen" hidden>
+          <div class="tip-card">
+            <div class="prompt" id="prompt"></div>
+            <div class="answer" id="answer"></div>
+          </div>
+
+          <div class="actions">
+            <button id="nextButton">Nächster Tipp</button>
+            <button class="secondary" id="restartButton" title="Alle Weisheiten neu mischen">Neu mischen</button>
+          </div>
+
+          <div class="counter" id="counter"></div>
+        </section>
+      </div>
+
+      <div class="footer">♡ Dagmar &amp; Mirko ♡</div>
+    </section>
+  </main>
+
+  <script>
+    let tips = [];
+    let order = [];
+    let position = 0;
+
+    function parseTips(text) {
+      const lines = text.split(/\r?\n/);
+      const result = [];
+      let currentF = null;
+
+      for (const raw of lines) {
+        const line = raw.trim();
+        if (!line) continue;
+
+        if (/^F\s*:/i.test(line)) {
+          currentF = line.replace(/^F\s*:\s*/i, '').trim();
+        } else if (/^A\s*:/i.test(line)) {
+          const answer = line.replace(/^A\s*:\s*/i, '').trim();
+          if (currentF && answer) {
+            result.push({ prompt: currentF, answer });
+            currentF = null;
+          }
+        }
+      }
+      return result;
+    }
+
+    function shuffle(array) {
+      const a = [...array];
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    function reshuffle() {
+      order = shuffle(tips.map((_, i) => i));
+      position = 0;
+    }
+
+    function showCurrentTip() {
+      if (!tips.length) return;
+
+      if (position >= order.length) {
+        reshuffle();
+      }
+
+      const tip = tips[order[position]];
+      document.getElementById('prompt').textContent = tip.prompt;
+      document.getElementById('answer').textContent = tip.answer;
+      document.getElementById('counter').textContent =
+        `${position + 1} / ${tips.length}`;
+    }
+
+    async function loadTips() {
+      try {
+        const response = await fetch('tipps.txt', { cache: 'no-store' });
+        if (!response.ok) throw new Error('tipps.txt konnte nicht geladen werden.');
+        const text = await response.text();
+        tips = parseTips(text);
+
+        if (!tips.length) {
+          throw new Error('In tipps.txt wurden keine gültigen F:/A:-Paare gefunden.');
+        }
+
+        reshuffle();
+        return true;
+      } catch (err) {
+        const el = document.getElementById('loadError');
+        el.hidden = false;
+        el.textContent =
+          'Die Tipp-Datei konnte nicht geladen werden. Das ist normal, wenn du die HTML-Datei direkt vom Handy/PC öffnest. Auf GitHub Pages funktioniert sie. Für einen lokalen Test kannst du später einen kleinen lokalen Webserver starten.';
+        return false;
+      }
+    }
+
+    document.getElementById('startButton').addEventListener('click', async () => {
+      if (!tips.length) {
+        const ok = await loadTips();
+        if (!ok) return;
+      }
+      document.getElementById('startScreen').hidden = true;
+      document.getElementById('tipScreen').hidden = false;
+      showCurrentTip();
+    });
+
+    document.getElementById('nextButton').addEventListener('click', () => {
+      position++;
+      showCurrentTip();
+    });
+
+    document.getElementById('restartButton').addEventListener('click', () => {
+      reshuffle();
+      showCurrentTip();
+    });
+  </script>
+</body>
+</html>
